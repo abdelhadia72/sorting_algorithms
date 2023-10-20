@@ -11,6 +11,7 @@ void bubble_sort(int *array, size_t size)
 
 	size_t i, j;
 	int tmp;
+	int swip;
 
 	if (size < 2)
 	{
@@ -19,7 +20,7 @@ void bubble_sort(int *array, size_t size)
 
 	for (i = 0; i < size - 1; i++)
 	{
-		int swip = 0;
+		swip = 0;
 
 		for (j = 0; j < size - i - 1; j++)
 		{
