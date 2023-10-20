@@ -8,8 +8,9 @@
 
 void bubble_sort(int *array, size_t size)
 {
-	long unsigned int i, j;
-	long unsigned int tmp;
+	size_t i, j;
+	int tmp;
+	int swip = 0;
 
 	for (i = 0; i < size - 1; i++)
 	{
@@ -22,8 +23,14 @@ void bubble_sort(int *array, size_t size)
 				array[j] = array[j + 1];
 				array[j + 1] = tmp;
 
+				swip = 1;
 				print_array(array, size);
 			}
+		}
+
+		if (swip == 0)
+		{
+			break;
 		}
 	}
 }
