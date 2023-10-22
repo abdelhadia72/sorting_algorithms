@@ -32,6 +32,7 @@ void selection_sort(int *array, size_t size)
         while (idx < size)
         {
                 sortArray(array, idx);
+                print_array(array, size);
                 idx++;
         }
 }

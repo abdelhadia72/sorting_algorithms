@@ -45,6 +45,7 @@ void insertion_sort_list(listint_t **list) {
         while (current != NULL) {
                 nextNode = current->next;
                 sortedList = sortList(sortedList, current);
+                print_list(sortedList);
                 current = nextNode;
         }
         
