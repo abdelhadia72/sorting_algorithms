@@ -1,5 +1,12 @@
 #include "sort.h"
 
+/**
+ * sortList - Function to sort linked list by insertion sort
+ * @sort: pointer to an unsorted array
+ * @nextNode: pointer to a next node in the array
+ * Return: a sorted list
+*/
+
 listint_t *sortList(listint_t *sort, listint_t *nextNode) 
 {
         listint_t *current;
@@ -19,6 +26,12 @@ listint_t *sortList(listint_t *sort, listint_t *nextNode)
         return sort;
 
 }
+
+/**
+ * insertion_sort_list - sort an array using insertion sort
+ * @list: pointer to the unsorted list
+ * Return: void
+*/
 
 void insertion_sort_list(listint_t **list) {
         listint_t *sortedList = NULL;
