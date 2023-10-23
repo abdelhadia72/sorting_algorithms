@@ -26,10 +26,7 @@ void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
-<<<<<<< HEAD
 void counting_sort(int *array, size_t size);
-=======
 void shell_sort(int *array, size_t size);
->>>>>>> 86aece504277cc6c58f1d3ad410e56b582f94bd2
 
 #endif
