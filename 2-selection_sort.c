@@ -36,7 +36,9 @@ void selection_sort(int *array, size_t size)
                         print_array(array, size);
                 }
                 swap = 1;
+                if (swap == 0)
+		{
+			break;
+		}
         }
-        if (swap = 0)
-                return;
 }
