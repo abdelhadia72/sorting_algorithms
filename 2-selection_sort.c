@@ -11,6 +11,11 @@ void selection_sort(int *array, size_t size)
 {
         size_t i, j;
 
+        if (size < 2)
+	{
+		return;
+	}
+
         for (i = 0; i < size - 1; i++)
         {
                 size_t min_idx = i;
